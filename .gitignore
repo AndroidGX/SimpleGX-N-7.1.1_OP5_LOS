@@ -22,6 +22,7 @@
 *.lst
 *.symtypes
 *.order
+modules.builtin
 *.elf
 *.bin
 *.tar
@@ -50,6 +51,7 @@ Module.symvers
 /vmlinuz
 /System.map
 /Module.markers
+/Module.symvers
 
 #
 # Debian directory (make deb-pkg)
@@ -71,6 +73,7 @@ Module.symvers
 # Generated include files
 #
 include/config
+include/linux/version.h
 include/generated
 arch/*/include/generated
 
@@ -112,3 +115,6 @@ all.config
 
 # Kdevelop4
 *.kdev4
+
+# Generated source files
+smd_rpc_sym.c
