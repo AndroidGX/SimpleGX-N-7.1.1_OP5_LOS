@@ -3,11 +3,6 @@
 # Linux/arm64 4.4.21 Kernel Configuration
 #
 
-# 
-# SimpleGX extras
-#
-CONFIG_FORCE_FAST_CHARGE=y
-
 CONFIG_VENDOR_ONEPLUS=y
 CONFIG_ARM64=y
 CONFIG_64BIT=y
