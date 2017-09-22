@@ -14,7 +14,7 @@ on early-init
 
 on property:sys.post_boot.parsed=1
 
-    # Enable Adaptive LMK
+    # Disable Adaptive LMK
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 0
 
     # Tweak IO performance after boot complete
@@ -47,4 +47,7 @@ on property:sys.post_boot.parsed=1
     write /sys/module/wakeup/parameters/enable_wlan_ipa_ws 0
     write /sys/module/wakeup/parameters/enable_wlan_pno_wl_ws 0
     write /sys/module/wakeup/parameters/enable_wcnss_filter_lock_ws 0
+
+    # OnePlus5 minimum backlight fix
+    write /sys/module/mdss_fb/parameters/backlight_min 8
 
